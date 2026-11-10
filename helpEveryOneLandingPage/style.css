@@ -1,0 +1,387 @@
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 40px;
+
+}
+
+.hero img {
+    width: 45%;
+    height: auto;
+}
+
+.hero > div {
+    width: 50%;
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #2998e8;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #2998e8;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.brand-mark {
+    width: 28px;
+    height: 28px;
+    background-color: #2998e8;
+    border-radius: 50%;
+    position: relative;
+}
+
+.brand-mark::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    width: 12px;
+    height: 8px;
+    border-bottom: 2px solid white;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.nav-links .active {
+    border-bottom: 2px solid #666;
+    font-weight: bold;
+}
+
+.sign-up {
+    color: #333;
+    text-decoration: none;
+    border: 1px solid #999;
+    padding: 12px 32px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+}
+
+.about {
+    display: block;
+    text-align: center;
+    padding: 60px 40px;
+    position: relative;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.about-tents {
+    display: block;
+    width: 160px;
+    height: auto;
+    margin: 20px 32% 0 auto;
+}
+
+.about-cloud {
+    display: absolute;
+    width: 230px;
+    height: auto;
+    left: 0;
+    top: 20px;
+}
+
+.about img.about-cloud {
+    position: absolute;
+    left: 25%;
+    top: 20px;
+    width: 230px;
+    height: auto;
+    margin: 0;
+}
+
+.services {
+    padding: 40px;
+}
+
+.services h2 {
+    color: #2998e8;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.service div {
+    flex: 1;
+}
+.service img {
+    width: 45%;
+    height: auto;
+}
+
+.service.reverse {
+    flex-direction: row-reverse;
+}
+
+.special-help {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #2998e8;
+    color: white;
+    padding: 40px;
+    margin: 40px;
+}
+
+.special-help img {
+    width: 45%;
+    height: auto;
+}
+
+.special-help div {
+    flex: 1;
+}
+
+.special-help a {
+    display: inline-block;
+    background-color: white;
+    color: #2998e8;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.consultation {
+    margin: 40px;
+    padding: 30px 20px;
+    border: 1px solid #2998e8;
+}
+
+.consultation h2, .consultation > p {
+    margin-left: 0;
+}
+
+.consultation form {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    gap: 24px 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-row input, .form-row select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.consultation button {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 45%;
+    padding: 12px;
+    background-color: #2998e8;
+    color: white;
+    border: none;
+}
+
+.site-footer {
+    padding: 40px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.site-footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-brand > a {
+    color: #333;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.hero-actions {
+    display:flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.button-primary {
+    display: inline-block;
+    background-color: #2998e8;
+    color: white;
+    padding: 14px 32px;
+    text-decoration: none;
+    box-shadow: 5px 5px 0 #ddd;
+}
+
+.story-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #444;
+    text-decoration: none;
+}
+
+.play-icon {
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #d9efff;
+    color: #2998e8;
+    position: relative;
+    font-size: 0;
+}
+
+.play-icon::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 10px solid #2998e8;;
+    margin-left: 3px;
+}
+
+.service a {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 12px 32px;
+    background-color: #2998e8;
+    color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px 0 #ddd;
+}
+
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .hero > div, .hero img {
+        width: 100%;
+    }
+
+    .about img {
+        margin: 20px auto 0;
+    }
+
+    .service, service.reverse {
+        flex-direction: column;
+    }
+
+    .service img {
+    width: 100%;
+    }
+
+    .special-help {
+        flex-direction: column;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .special-help img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .consultation {
+        margin: 20px;
+    }
+
+    .consultation form {
+        grid-template-columns: 1fr;
+    }
+
+    .consultation button {
+        grid-column: 1;
+        width: 100%;
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
